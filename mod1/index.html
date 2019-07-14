@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<!--///////////////////////////////////////////////Open-Navbar/////////////////////////////////////////////////////////////////////-->
+
+<nav class="navbar navbar-expand navbar-dark static-top navbar">
+
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars fa-2x" style="color: black"></i>
+    </button>
+
+    <i class="fab fa-youtube fa-2x" id="youtubeicon"></i><h4>Youtube</h4>
+
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0" style="position: relative;right: 150px" id="searchbar">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" style="background-color: gainsboro">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Navbar -->
+    <ul class="navbar-nav ml-auto ml-md-0">
+
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdowna" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-video fa-2x" style="color: black"></i>
+            </a>
+
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdownb" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-comment-medical fa-2x"style="color: black"></i>
+            </a>
+
+        </li>
+
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw fa-2x"style="color: black"></i>
+                <span class="badge badge-danger" style="margin: 0px">9+</span>
+            </a>
+
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw fa-2x" style="color: black"></i>
+                <span class="badge badge-danger" style="margin: 0px">9+</span>
+            </a>
+
+        </li>
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle fa-fw fa-2x" style="color: orange"></i>
+            </a>
+
+        </li>
+    </ul>
+
+</nav>
+<!--///////////////////////////////////////////////Close-Navbar/////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////////////////////////////Open-Sidebar////////////////////////////////////////////////////////////////////-->
+
+    <div class="row">
+        <div class="col-md-2">
+
+            <ul class="sidebar navbar-nav" style="background-color:#f2f2f2">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home fa-1x" style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fire" style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">Trending</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="border-bottom: 1px solid gray">
+                        <i class="fas fa-inbox" style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">Subscription</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-folder"style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">Library</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-history"style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">History</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-clock"style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">Watch Later</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="border-bottom: 1px solid gray">
+                        <i class="fas fa-thumbs-up"style="color: #808080"></i>
+                        <span style="color: #808080;font-size: 17px">Liked Videos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span style="color: #808080;font-weight: bold;font-size: 19px">SUBSCRIPTIONS</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fab fa-adn"style="color: grey"></i>
+                        <span style="color: grey;font-size: 17px">Ada Derana</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fab fa-adn" style="color: grey"></i>
+                        <span style="color: grey;font-size: 17px">Talk With Chathura</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fab fa-adn"style="color: grey"></i>
+                        <span style="color: grey;font-size: 17px">Sri Lanka Cricket</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fab fa-adn"style="color: grey"></i>
+                        <span style="color: grey;font-size: 17px">Hiru News</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fab fa-adn" style="color: grey"></i>
+                        <span style="color: grey;font-size: 17px">Chanuk Bro</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-md-2">
+            <img id="img22" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/5avYXsAgTbI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBcejj8IDD3YK9nz8VG6iPs56o7Rw" >
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="imeg" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/cmWLhHTQDBw/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBiDaOIvV5x_RLM0elKWZstHipBew"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/0Iykn4mBT9U/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLC5S1z0zWBoJ9JokWhj2GfrKKxD-w"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+        </div>
+
+        <div class="col-md-2">
+            <img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/BaUaOY8ij_E/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDl8uz8TQH7nHDEmNN0iFB1Bb-QIw">
+            <span class="spanone">South Africa v Bangladesh.Match 5:Preview</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/nefi_44NLmQ/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLB_Y0AGpADseZCCSmSxHDaZWgp_0Q"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img8" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/5avYXsAgTbI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBcejj8IDD3YK9nz8VG6iPs56o7Rw"style="margin-top: 25px!important;">
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+        </div>
+
+        <div class="col-md-2">
+            <img id="imgw" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/nDre9I5ovLU/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCeZThUTIVgalLs1m3xURG42VyW4Q">
+            <span class="spanone">South Africa v Bangladesh.Match 5:Preview </span>
+            <span class="spantwo">Cricbuz <br>47K Views. 1 hour ago</span>
+
+            <img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/ExomIKVD-g0/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLB3e5R0slC_ahHWBIK87tVTSd-TpQ"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img55" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/5avYXsAgTbI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBcejj8IDD3YK9nz8VG6iPs56o7Rw"style="margin-top: 25px!important;">
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+        </div>
+
+        <div class="col-md-2">
+            <img id="imwg" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/RLHTYs58KAM/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLA9UzH6vRi1EWpzPSdLFGjxqpJUDA">
+            <span class="spanone">Room Number 33|Episode 2012-04-12 <br></span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <<img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/Pk5w6-uSXaQ/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAG1R6MhX4FxTAtcV93ml2lIsRXDw"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img33" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/5avYXsAgTbI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBcejj8IDD3YK9nz8VG6iPs56o7Rw"style="margin-top: 25px!important;">
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+        </div>
+
+        <div class="col-md-2">
+            <img id="imge" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/MsiwQ5x8Hlc/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDR7mOWAVp8uuJsAno6HO3CJ-oPMw">
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/XJjLcluBeQU/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBpIb3aDjtBc268GPbWYbfxCl6Aug"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+
+            <img id="img" class="style-scope yt-img-shadow" alt="" width="210" src="https://i.ytimg.com/vi/rTDbt-TE1EI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAqcij5MxRGOvu8n55buJShASlLJw"style="margin-top: 25px!important;>
+            <span class="spanone">Thisara Perera's knock-T20,Sri Lanka vs England at Dambulla</span>
+            <span class="spantwo">TV Derana <br>47K Views. 1 year ago</span>
+        </div>
+        <!--<div class="col-md-10">-->
+<!--<div class="row">-->
+    <!--<div class="col-md-2">-->
+        <!---->
+    <!--</div>-->
+
+    <!--<div class="col-md-2">-->
+        <!---->
+    <!--</div>-->
+
+    <!--<div class="col-md-2">-->
+
+    <!--</div>-->
+
+    <!--<div class="col-md-2">-->
+
+    <!--</div>-->
+
+    <!--<div class="col-md-2">-->
+
+    <!--</div>-->
+    <!--<div class="col-md-2">-->
+
+    <!--</div>-->
+<!--</div>-->
+
+
+        </div>
+
+    </div>
+
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="jquery/jquery.easing.min.js"></script>
+
+<script src="js/sb-admin.min.js"></script>
+</body>
+</html>

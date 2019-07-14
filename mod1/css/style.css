@@ -1,0 +1,18 @@
+.navbar{
+    background-color: white!important;
+}
+#youtubeicon{
+    color: red;
+    margin-left: 18px;
+}
+#searchbar{
+    width: 580px;
+    border: 1px solid gray;
+}.spanone{
+    color: #595959;
+    font-weight: bold;
+    font-size: 14px;
+ }
+.spantwo{
+    color: #595959;
+}
